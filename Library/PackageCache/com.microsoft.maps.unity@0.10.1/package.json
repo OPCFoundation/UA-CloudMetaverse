@@ -1,0 +1,18 @@
+{
+    "name":  "com.microsoft.maps.unity",
+    "version":  "0.10.1",
+    "displayName":  "Maps SDK for Unity",
+    "description":  "Maps SDK, a Microsoft Garage Project provides a control to visualize a 3D map in Unity. The SDK handles streaming and rendering of 3D terrain data with world-wide coverage. Select cities are rendered at a very high level of detail. Data is provided by Bing Maps.",
+    "unity":  "2018.4",
+    "keywords":  [
+                     "maps",
+                     "geospatial",
+                     "vr",
+                     "ar",
+                     "xr"
+                 ],
+    "author":  {
+                   "name":  "Microsoft",
+                   "url":  "https://github.com/Microsoft/MapsSDK-Unity"
+               }
+}

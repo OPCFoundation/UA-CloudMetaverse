@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "packages": {
+    "com.microsoft.mixedreality.input": {
+      "tarball": {
+        "hash": "c707ff4d69e7",
+        "mtime": 1668514526397,
+        "size": 1659912,
+        "localPath": "D:\\Code\\UA-CloudMetaverse\\Packages\\MixedReality\\com.microsoft.mixedreality.input-0.9.2006.tgz"
+      }
+    },
+    "com.microsoft.mixedreality.openxr": {
+      "tarball": {
+        "hash": "f977215f57e6",
+        "mtime": 1668514526483,
+        "size": 7719023,
+        "localPath": "D:\\Code\\UA-CloudMetaverse\\Packages\\MixedReality\\com.microsoft.mixedreality.openxr-0.9.3.tgz"
+      }
+    },
+    "com.microsoft.mixedreality.toolkit.extensions": {
+      "tarball": {
+        "hash": "823aa7827c33",
+        "mtime": 1668514526515,
+        "size": 1128578,
+        "localPath": "D:\\Code\\UA-CloudMetaverse\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.extensions-2.6.1.tgz"
+      }
+    },
+    "com.microsoft.mixedreality.toolkit.foundation": {
+      "tarball": {
+        "hash": "e1282c3a158d",
+        "mtime": 1668514526602,
+        "size": 8616356,
+        "localPath": "D:\\Code\\UA-CloudMetaverse\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.foundation-2.6.1.tgz"
+      }
+    },
+    "com.microsoft.mixedreality.toolkit.gpustats": {
+      "tarball": {
+        "hash": "c5bca7da8201",
+        "mtime": 1668514526630,
+        "size": 136802,
+        "localPath": "D:\\Code\\UA-CloudMetaverse\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.gpustats-1.0.3.tgz"
+      }
+    },
+    "com.microsoft.mixedreality.toolkit.planefinding": {
+      "tarball": {
+        "hash": "ba1c62ce75c5",
+        "mtime": 1668514526659,
+        "size": 226297,
+        "localPath": "D:\\Code\\UA-CloudMetaverse\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.planefinding-1.0.0.tgz"
+      }
+    },
+    "com.microsoft.mixedreality.toolkit.standardassets": {
+      "tarball": {
+        "hash": "3d02209898d4",
+        "mtime": 1668514526718,
+        "size": 4693116,
+        "localPath": "D:\\Code\\UA-CloudMetaverse\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.standardassets-2.6.1.tgz"
+      }
+    },
+    "com.microsoft.mixedreality.toolkit.testutilities": {
+      "tarball": {
+        "hash": "97154bbe6311",
+        "mtime": 1668514526746,
+        "size": 15917,
+        "localPath": "D:\\Code\\UA-CloudMetaverse\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.testutilities-2.6.1.tgz"
+      }
+    },
+    "com.microsoft.spatialaudio.spatializer.unity": {
+      "tarball": {
+        "hash": "730db6cf6e96",
+        "mtime": 1668514526822,
+        "size": 6034916,
+        "localPath": "D:\\Code\\UA-CloudMetaverse\\Packages\\MixedReality\\com.microsoft.spatialaudio.spatializer.unity-1.0.196.tgz"
+      }
+    }
+  }
+}
