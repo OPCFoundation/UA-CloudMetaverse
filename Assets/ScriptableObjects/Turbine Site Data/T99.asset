@@ -17,14 +17,14 @@ MonoBehaviour:
     <TimeInterval>k__BackingField: 
     <EventCode>k__BackingField: 0
     <EventDescription>k__BackingField: 
-    <WindSpeed>k__BackingField: 0
-    <AmbientTemperature>k__BackingField: 0
-    <RotorSpeed>k__BackingField: 0
+    <WindSpeed>k__BackingField: 8
+    <AmbientTemperature>k__BackingField: 5
+    <RotorSpeed>k__BackingField: 12
     <Power>k__BackingField: 0
   windTurbineMetaData:
     <FacilityName>k__BackingField: Sample Wind Turbine Site
-    <Latitude>k__BackingField: 36.70121066260686
-    <Longitude>k__BackingField: -78.37004458072485
+    <Latitude>k__BackingField: 52.32
+    <Longitude>k__BackingField: 9.805
     <Heading>k__BackingField: 140
     <TurbineModel>k__BackingField: Generic Wind Turbine 1701
     <HubHeight>k__BackingField: 105

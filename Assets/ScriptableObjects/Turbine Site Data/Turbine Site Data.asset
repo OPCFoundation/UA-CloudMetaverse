@@ -11,11 +11,11 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9747e10b5362b7f44b3e1da0bf87940a, type: 3}
   m_Name: Turbine Site Data
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier:
   facilityName: Sample Wind Turbine Facility
   siteLatLon:
-    _latitude: 36.699057781864425
-    _longitude: -78.3637742760107
+    _latitude: 52.324165
+    _longitude: 9.808337
   turbineData:
   - {fileID: 11400000, guid: e11207159ac84ca4ea64e59d9a067dfd, type: 2}
   - {fileID: 11400000, guid: 82ddfa2b06f756d459476166194f7384, type: 2}

@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.5.33414.496
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BladeMR", "BladeMR.csproj", "{41CCFB8F-B4AE-95A2-9B2A-F4E33EACF5C4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BladeMR.Tests.PlayMode", "BladeMR.Tests.PlayMode.csproj", "{3BDF4D4B-3B9B-6BC6-0440-3F45D6857D53}"

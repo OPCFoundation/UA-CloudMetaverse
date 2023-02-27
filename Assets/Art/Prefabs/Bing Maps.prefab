@@ -46,15 +46,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -837401356, guid: f58183a31672bf641bbeeaef3d4759c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _developerKey: 
+  m_Name:
+  m_EditorClassIdentifier:
+  _developerKey:
   _showMapDataInEditor: 1
   _languageOverride: 42
   _languageChanged:
     m_PersistentCalls:
       m_Calls: []
-  _regionOverride: 
+  _regionOverride:
 --- !u!114 &4159023234360292598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,16 +65,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1cf6985fc3c122a4193d16fdcfb59784, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _version: 3
   _mapSession: {fileID: 4159023234360292599}
   _mapEdgeColor: {r: 0.121568635, g: 0.14901961, b: 0.16470589, a: 1}
   _mapEdgeColorFadeDistance: 0.02
   _detailOffset: -0.5
   _center:
-    _latitude: 36.6990577818644
-    _longitude: -78.3637742760107
+    _latitude: 52.324165
+    _longitude: 9.808337
   _zoomLevel: 15.5
   _minimumZoomLevel: 14
   _maximumZoomLevel: 18
@@ -110,8 +110,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1124163735, guid: f58183a31672bf641bbeeaef3d4759c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _imageryType: 1
   _areRoadsEnabled: 0
   _areLabelsEnabled: 0
@@ -127,8 +127,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 243684798, guid: f58183a31672bf641bbeeaef3d4759c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!114 &4159023234360292587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,8 +139,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02c7d1b323594a144ac9b98fd93e0f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _layerName: MapCopyrightLayer
   _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   _textColor: {r: 1, g: 1, b: 1, a: 0.42}
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ef50f6f9318ded40b230c1eefb7f968, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   _percentUtilization: 0.233
   _maxCacheSizeInBytes: 2147483648
