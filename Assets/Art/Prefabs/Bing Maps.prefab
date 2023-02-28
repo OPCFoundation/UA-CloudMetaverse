@@ -74,7 +74,7 @@ MonoBehaviour:
   _detailOffset: -0.5
   _center:
     _latitude: 52.324165
-    _longitude: 9.808337
+    _longitude: 9.803
   _zoomLevel: 15.5
   _minimumZoomLevel: 14
   _maximumZoomLevel: 18

@@ -102,7 +102,7 @@
     <Compile Include="Assets\Scripts\UI\MessageBoxUI.cs" />
     <Compile Include="Assets\Scripts\Utils\HoverMaterialSwitcher.cs" />
     <Compile Include="Assets\Scripts\Map\MapPinLinkedObject.cs" />
-    <Compile Include="Assets\Scripts\SignalR\SignalRService.cs" />
+    <Compile Include="Assets\Scripts\SignalR\ADXService.cs" />
     <Compile Include="Assets\Scripts\Map\MapRendererHover.cs" />
   </ItemGroup>
   <ItemGroup>

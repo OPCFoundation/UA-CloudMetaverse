@@ -23,9 +23,9 @@ MonoBehaviour:
     <Power>k__BackingField: 0
   windTurbineMetaData:
     <FacilityName>k__BackingField: Sample Wind Turbine Site
-    <Latitude>k__BackingField: 52.323
-    <Longitude>k__BackingField: 9.815
-    <Heading>k__BackingField: 140
+    <Latitude>k__BackingField: 52.3249
+    <Longitude>k__BackingField: 9.808
+    <Heading>k__BackingField: 250
     <TurbineModel>k__BackingField: Generic Wind Turbine 1701
     <HubHeight>k__BackingField: 105
     <RotorDiameter>k__BackingField: 154

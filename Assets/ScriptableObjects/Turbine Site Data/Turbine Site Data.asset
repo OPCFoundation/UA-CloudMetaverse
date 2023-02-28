@@ -15,7 +15,7 @@ MonoBehaviour:
   facilityName: Sample Wind Turbine Facility
   siteLatLon:
     _latitude: 52.324165
-    _longitude: 9.808337
+    _longitude: 9.803
   turbineData:
   - {fileID: 11400000, guid: e11207159ac84ca4ea64e59d9a067dfd, type: 2}
   - {fileID: 11400000, guid: 82ddfa2b06f756d459476166194f7384, type: 2}
