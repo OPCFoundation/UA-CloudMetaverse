@@ -15,7 +15,8 @@ OPC UA Industrial Metaverse reference implementation leveraging Unity and the Di
 1. Run the OPC UA simulation as described [here](https://github.com/digitaltwinconsortium/ManufacturingOntologies#running-the-production-line-simulation).
 1. Create an application registration for your ADX instance as described [here](https://docs.microsoft.com/en-us/azure/data-explorer/provision-azure-ad-app). Copy the client secret to a safe place.
 1. In the C# file under the downloaded repository path /Assets/Scripts/SignalR/ADXService.cs, update the variables applicationClientId, adxInstanceURL, adxDatabaseName and tenantId with the data from our Azure Data Explorer instance, new app registration you have just completed and your Active Directory available in the Azure Portal.
-1. Open the Unity project through the Unity Hub in the Unity Editor and select the ADTConnection in the Hirarchy panel. In the Inspector panel, provide the client secret copied previously in the Url field.
+1. Open the Unity project through the Unity Hub, in the Unity Editor select the ADTConnection in the Hierarchy panel. In the Inspector panel, provide the client secret copied previously in the Url field.
+1. Select Bing Maps Operate in the Hierarchy panel and provide a Bing Maps SDK key in the Developer Key field. A Bing Maps SDK key can be obtained from [here](https://www.bingmapsportal.com/).
 1. Put on your VR or AR headset and build and run the scene.
 
 
