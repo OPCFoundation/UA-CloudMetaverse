@@ -4,6 +4,11 @@ OPC UA Industrial Metaverse reference implementation leveraging Unity and the Di
 
 <img src="Docs/metaverse.png" alt="screenshot" width="900" />
 
+## Prerequisits
+
+1. A PC with at least 16 GB of memory and a modern graphics card with at least 6 GB of memory.
+1. A Microsoft Mixed Reality Toolkit-compatible Virtual Reality or Augmented Reality headset.
+
 ## Installation & Running the Reference Implementation
 
 1. Download this repository to a directory of your choice from [here](https://github.com/OPCFoundation/UA-CloudMetaverse/archive/refs/heads/main.zip).
@@ -17,6 +22,6 @@ OPC UA Industrial Metaverse reference implementation leveraging Unity and the Di
 1. In the C# file under the downloaded repository path /Assets/Scripts/SignalR/ADXService.cs, update the variables applicationClientId, adxInstanceURL, adxDatabaseName and tenantId with the data from our Azure Data Explorer instance, new app registration you have just completed and your Active Directory available in the Azure Portal.
 1. Open the Unity project through the Unity Hub, in the Unity Editor select the ADTConnection in the Hierarchy panel. In the Inspector panel, provide the client secret copied previously in the Url field.
 1. Select Bing Maps Operate in the Hierarchy panel and provide a Bing Maps SDK key in the Developer Key field. A Bing Maps SDK key can be obtained from [here](https://www.bingmapsportal.com/).
-1. Put on your VR or AR headset and build and run the scene.
+1. Put on your Virtual Reality or Augmented Reality headset and build and run the scene.
 
 
