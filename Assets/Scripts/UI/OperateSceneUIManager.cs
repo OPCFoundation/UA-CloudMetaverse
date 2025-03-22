@@ -1,6 +1,5 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
-using Microsoft.MixedReality.Toolkit.UI;
 using UnityEngine;
 
 /// <summary>
@@ -33,7 +32,7 @@ public class OperateSceneUIManager : MonoBehaviour
 
     private void Start()
     {
-        windTurbinePanel.gameObject.SetActive(false);
+        windTurbinePanel?.gameObject?.SetActive(false);
     }
 
     /// <summary>
@@ -42,7 +41,6 @@ public class OperateSceneUIManager : MonoBehaviour
     public void ShowSiteOverviewPanel(bool enableFollowMe = true)
     {
         siteOverviewPanel.gameObject.SetActive(true);
-        siteOverviewPanel.GetComponent<FollowMeToggle>()?.SetFollowMeBehavior(enableFollowMe);
     }
 
     /// <summary>
@@ -50,8 +48,8 @@ public class OperateSceneUIManager : MonoBehaviour
     /// </summary>
     public void OnWindTurbineSelected(WindTurbineScriptableObject turbineData)
     {
-        windTurbinePanel.gameObject.SetActive(true);
-        windTurbinePanel.SetTurbineData(turbineData);
+        windTurbinePanel?.gameObject?.SetActive(true);
+        windTurbinePanel?.SetTurbineData(turbineData);
     }
 
     /// <summary>

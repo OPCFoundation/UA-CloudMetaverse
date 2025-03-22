@@ -1,13 +1,12 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
-using Microsoft.MixedReality.Toolkit.Input;
 using UnityEngine;
 
 /// <summary>
 /// Raycasts the scene and sets the transform position.
 /// When grabbed by a pointer it will allow movement above ground
 /// </summary>
-public class SnapToGround : MonoBehaviour, IMixedRealityPointerHandler
+public class SnapToGround : MonoBehaviour
 {
     public LayerMask layerMask;
     public float smoothingTime = 8f;
@@ -72,21 +71,21 @@ public class SnapToGround : MonoBehaviour, IMixedRealityPointerHandler
         }
     }
 
-    public void OnPointerDown(MixedRealityPointerEventData eventData)
+    public void OnPointerDown()
     {
         isInteracting = true;
     }
 
-    public void OnPointerUp(MixedRealityPointerEventData eventData)
+    public void OnPointerUp()
     {
         isInteracting = false;
     }
 
-    public void OnPointerDragged(MixedRealityPointerEventData eventData)
+    public void OnPointerDragged()
     {
     }
 
-    public void OnPointerClicked(MixedRealityPointerEventData eventData)
+    public void OnPointerClicked()
     {
     }
 }

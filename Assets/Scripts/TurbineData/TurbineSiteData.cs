@@ -1,8 +1,6 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 using System.Collections.Generic;
-using Microsoft.Geospatial;
-using Microsoft.Maps.Unity;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "TurbineSiteData", menuName = "Scriptable Objects/Turbine Data/Turbine Site Data", order = 1)]
@@ -10,14 +8,6 @@ public class TurbineSiteData : ScriptableObject
 {
     [Header("Site Info")]
     public string facilityName;
-
-    [SerializeField]
-    private LatLonWrapper siteLatLon;
-
-    /// <summary>
-    /// The Latitude/Longitude to center the map
-    /// </summary>
-    public LatLon SiteLocation => siteLatLon.ToLatLon();
 
     public WindTurbineScriptableObject[] turbineData;
 

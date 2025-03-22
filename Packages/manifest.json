@@ -1,34 +1,29 @@
 {
   "scopedRegistries": [
     {
-      "name": "Maps SDK for Unity",
+      "name": "Cesium",
+      "url": "https://unity.pkg.cesium.com",
       "scopes": [
-        "com.microsoft.maps"
-      ],
-      "url": "https://unity.virtualearth.net/npm/registry/"
+        "com.cesium.unity"
+      ]
     }
   ],
   "dependencies": {
-    "com.microsoft.maps.unity": "0.10.1",
-    "com.microsoft.mixedreality.input": "file:MixedReality/com.microsoft.mixedreality.input-0.9.2006.tgz",
-    "com.microsoft.mixedreality.openxr": "file:MixedReality/com.microsoft.mixedreality.openxr-0.9.3.tgz",
-    "com.microsoft.mixedreality.toolkit.extensions": "file:MixedReality/com.microsoft.mixedreality.toolkit.extensions-2.6.1.tgz",
-    "com.microsoft.mixedreality.toolkit.foundation": "file:MixedReality/com.microsoft.mixedreality.toolkit.foundation-2.6.1.tgz",
-    "com.microsoft.mixedreality.toolkit.gpustats": "file:MixedReality/com.microsoft.mixedreality.toolkit.gpustats-1.0.3.tgz",
-    "com.microsoft.mixedreality.toolkit.planefinding": "file:MixedReality/com.microsoft.mixedreality.toolkit.planefinding-1.0.0.tgz",
-    "com.microsoft.mixedreality.toolkit.standardassets": "file:MixedReality/com.microsoft.mixedreality.toolkit.standardassets-2.6.1.tgz",
-    "com.microsoft.mixedreality.toolkit.testutilities": "file:MixedReality/com.microsoft.mixedreality.toolkit.testutilities-2.6.1.tgz",
-    "com.microsoft.spatialaudio.spatializer.unity": "file:MixedReality/com.microsoft.spatialaudio.spatializer.unity-1.0.196.tgz",
-    "com.unity.addressables": "1.18.19",
-    "com.unity.collab-proxy": "2.0.0",
-    "com.unity.ide.rider": "3.0.18",
-    "com.unity.ide.visualstudio": "2.0.17",
+    "com.cesium.unity": "1.15.4",
+    "com.meta.xr.sdk.all": "74.0.1",
+    "com.unity.addressables": "1.22.3",
+    "com.unity.ai.navigation": "1.1.5",
+    "com.unity.collab-proxy": "2.6.0",
+    "com.unity.device-simulator.devices": "1.0.0",
+    "com.unity.ide.rider": "3.0.34",
+    "com.unity.ide.visualstudio": "2.0.22",
     "com.unity.ide.vscode": "1.2.5",
     "com.unity.test-framework": "1.1.33",
-    "com.unity.textmeshpro": "3.0.6",
-    "com.unity.timeline": "1.4.8",
+    "com.unity.textmeshpro": "3.0.7",
+    "com.unity.timeline": "1.7.6",
     "com.unity.ugui": "1.0.0",
-    "com.unity.xr.openxr": "1.6.0",
+    "com.unity.xr.meta-openxr": "1.0.3",
+    "com.unity.xr.openxr": "1.14.1",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

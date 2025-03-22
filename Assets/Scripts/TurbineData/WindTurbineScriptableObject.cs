@@ -1,7 +1,6 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 using System;
-using Microsoft.Geospatial;
 using UnityEngine;
 
 /// <summary>
@@ -34,9 +33,4 @@ public class WindTurbineScriptableObject : ScriptableObject
         windTurbineData = newWindTurbineData;
         onDataUpdated?.Invoke();
     }
-
-    /// <summary>
-    /// Stores the Wind Turbines user placed location in the scene
-    /// </summary>
-    public LatLon CurrentLocation { get; set; }
 }

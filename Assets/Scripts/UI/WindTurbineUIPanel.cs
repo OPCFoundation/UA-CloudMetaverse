@@ -38,7 +38,7 @@ public class WindTurbineUIPanel : MonoBehaviour
     public TextMeshProUGUI dataValueTimeInterval;
     public TextMeshProUGUI dataValueStatusCode;
     public TextMeshProUGUI descriptionText;
-    public GameObject descriptionPanel;
+    //public GameObject descriptionPanel;
     public GameObject warningIndicator;
 
     private IEnumerator currentAnimation;
@@ -52,8 +52,6 @@ public class WindTurbineUIPanel : MonoBehaviour
         {
             SetTurbineData(windTurbineData);
         }
-
-        descriptionPanel.SetActive(false);
     }
 
     private void OnDisable()
@@ -89,7 +87,6 @@ public class WindTurbineUIPanel : MonoBehaviour
     /// <param name="eventDescription"></param>
     public void ShowEventDescription(string eventDescription)
     {
-        descriptionPanel.SetActive(true);
         descriptionText.text = eventDescription;
     }
 
@@ -102,7 +99,6 @@ public class WindTurbineUIPanel : MonoBehaviour
         dataValueTimeInterval.text = windTurbineData.windTurbineData.TimeInterval;
         dataValueStatusCode.text = windTurbineData.windTurbineData.EventCode.ToString();
         warningIndicator.SetActive(windTurbineData.windTurbineMetaData.Alert);
-        descriptionPanel.SetActive(windTurbineData.windTurbineMetaData.Alert);
         descriptionText.text = windTurbineData.windTurbineData.EventDescription;
 
         if (animateValueTransitions)
@@ -133,12 +129,15 @@ public class WindTurbineUIPanel : MonoBehaviour
             progressControllerPower.CurrentValue = Mathf.Lerp(
                 (float)progressControllerPower.CurrentValue,
                 (float)windTurbineData.windTurbineData.Power, t);
+
             progressControllerTemperature.CurrentValue = Mathf.Lerp(
                 (float)progressControllerTemperature.CurrentValue,
                 (float)windTurbineData.windTurbineData.AmbientTemperature, t);
+
             progressControllerWindSpeed.CurrentValue = Mathf.Lerp(
                 (float)progressControllerWindSpeed.CurrentValue,
                 (float)windTurbineData.windTurbineData.WindSpeed, t);
+
             progressControllerRotorSpeed.CurrentValue = Mathf.Lerp(
                 (float)progressControllerRotorSpeed.CurrentValue,
                 (float)windTurbineData.windTurbineData.RotorSpeed, t);

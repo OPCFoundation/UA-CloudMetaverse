@@ -58,11 +58,11 @@ public class ADXService
                 {
                     HttpClient webClient = new HttpClient();
 
-                    string applicationClientId = "da43d633-f342-4607-afe8-c02ebec17835";
+                    string applicationClientId = "";
                     string applicationKey = url;
-                    string adxInstanceURL = "https://opcmetaverseadx.westeurope.kusto.windows.net";
-                    string adxDatabaseName = "opcmetaverse-DB";
-                    string tenantId = "6e660ce4-d51a-4585-80c6-58035e212354";
+                    string adxInstanceURL = "";
+                    string adxDatabaseName = "";
+                    string tenantId = "";
 
                     // acquire OAuth2 token via AAD REST endpoint
                     webClient.DefaultRequestHeaders.Add("Accept", "application/json");
@@ -74,18 +74,18 @@ public class ADXService
                     string restResponse = responseMessage.Content.ReadAsStringAsync().GetAwaiter().GetResult();
 
                     // call ADX REST endpoint with query
-                    string query = "let shiftEndTime = now();"
-                    + "let shiftStartTime = datetime_add('hour', -1, shiftEndTime);"
-                    + "let dataHistoryTable = AdtPropertyEvents"
-                    + "| where TimeStamp between(shiftStartTime..shiftEndTime)"
-                    + "| where Id == toscalar(GetDigitalTwinIdForUANode('assembly', 'munich', 'EnergyConsumption'));"
-                    + "dataHistoryTable"
-                    + "| where isnotnull(SourceTimeStamp)"
-                    + "| extend energy = todouble(Value)"
-                    + "| take 10";
+                    string query = "opcua_metadata_lkv"
+                        + "| where Name contains 'assembly'"
+                        + "| where Name contains 'seattle'"
+                        + "| join kind = inner(opcua_telemetry"
+                        + "| where Name contains 'Energy'"
+                        + "| where Timestamp > now() - 5m and Timestamp < now()"
+                        + ") on DataSetWriterID"
+                        + "| sort by Timestamp desc"
+                        + "| project Timestamp, abs(todouble(Value))";
 
                     webClient.DefaultRequestHeaders.Remove("Accept");
-                    webClient.DefaultRequestHeaders.Add("Authorization", "bearer " + JObject.Parse(restResponse)["access_token"].ToString());
+                    webClient.DefaultRequestHeaders.Add("Authorization", "bearer " + JObject.Parse(restResponse)["access_token"]?.ToString());
                     responseMessage = webClient.SendAsync(new HttpRequestMessage(HttpMethod.Post, adxInstanceURL + "/v2/rest/query")
                     {
                         Content = new StringContent("{ \"db\":\"" + adxDatabaseName + "\", \"csl\":\"" + query + "\" }", Encoding.UTF8, "application/json")
@@ -102,14 +102,14 @@ public class ADXService
                         // the 3rd entry is the data table
                         foreach (List<object> row in response[2].Rows)
                         {
-                            // entry 6 is the value
+                            // entry 1 is the value
                             OnTelemetryMessage?.Invoke(new TelemetryMessage
                             {
                                 Ambient = 12.0,
                                 TurbineID = "T" + i.ToString(),
-                                Power = double.Parse(row[6].ToString()) * 1000,
-                                Rotor = double.Parse(row[6].ToString()) * 100,
-                                WindSpeed = double.Parse(row[6].ToString()) * 20
+                                Power = double.Parse(row[1].ToString()) * 1000,
+                                Rotor = double.Parse(row[1].ToString()) * 100,
+                                WindSpeed = double.Parse(row[1].ToString()) * 20
                             });
 
                             i++;

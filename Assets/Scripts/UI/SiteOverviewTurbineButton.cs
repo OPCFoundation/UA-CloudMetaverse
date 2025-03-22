@@ -1,10 +1,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
-using Microsoft.MixedReality.Toolkit.Input;
 using TMPro;
 using UnityEngine;
 
-public class SiteOverviewTurbineButton : MonoBehaviour, IMixedRealityFocusHandler
+public class SiteOverviewTurbineButton : MonoBehaviour
 {
     public SiteOverviewUIPanel siteOverviewPanel;
 
@@ -62,13 +61,13 @@ public class SiteOverviewTurbineButton : MonoBehaviour, IMixedRealityFocusHandle
         focusOnTurbineEvent.Raise(windTurbineData);
     }
 
-    public void OnFocusEnter(FocusEventData eventData)
+    public void OnFocusEnter()
     {
         siteOverviewPanel.OnHoverTurbineButton(WindTurbineData);
         onHoverStart.Raise(WindTurbineData);
     }
 
-    public void OnFocusExit(FocusEventData eventData)
+    public void OnFocusExit()
     {
         siteOverviewPanel.OnHoverTurbineEnd();
         onHoverEnd.Raise(WindTurbineData);

@@ -27,6 +27,8 @@ EditorBuildSettings:
     path: Assets/Scenes/CompletedScene.unity
     guid: 9b525369e7b672e44b91a2da80a9fa11
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 227733279ffa97743bd8463cb8c61c84, type: 2}
     com.unity.addressableassets: {fileID: 11400000, guid: 8d341e90bdd67914e921da3cb85d3270, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: b67259b74365e714dac261682f7a30dc, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: abff8632290b16d4a95422c2d70e39c1, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: ba16014566e21274cb627786d3a825ab, type: 2}
