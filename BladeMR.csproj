@@ -9,7 +9,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{41CCFB8F-B4AE-95A2-9B2A-F4E33EACF5C4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -99,6 +100,7 @@
     <Compile Include="Assets\Scripts\UI\SiteOverviewUIPanel.cs" />
     <Compile Include="Assets\Scripts\SignalR\ADTDataHandler.cs" />
     <Compile Include="Assets\Scripts\Events\ADTAuthenticationGameEvent.cs" />
+    <Compile Include="Assets\Update.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NonRelease\BladeMR.asmdef" />

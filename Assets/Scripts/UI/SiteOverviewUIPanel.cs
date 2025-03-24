@@ -13,10 +13,10 @@ public class SiteOverviewUIPanel : MonoBehaviour
     public SiteOverviewTurbineButton turbineButtonPrefab;
     public RectTransform contentTransform;
     public WindTurbineUIPanel hoverPanel;
-    
+
     [SerializeField]
     private ProgressController powerOutputBar;
-    
+
     private Dictionary<WindTurbineScriptableObject, SiteOverviewTurbineButton> turbineButtons;
 
     private void Start()
