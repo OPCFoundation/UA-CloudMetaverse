@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.13.35913.81 d17.13
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BladeMR", "BladeMR.csproj", "{41CCFB8F-B4AE-95A2-9B2A-F4E33EACF5C4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BladeMR.Editor", "BladeMR.Editor.csproj", "{1A6F6041-0D8C-295F-AF64-735AC10BC260}"
@@ -37,8 +35,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {21BB8299-6988-4195-8765-BB20C393BE0E}
 	EndGlobalSection
 EndGlobal
