@@ -2,7 +2,6 @@
 // Licensed under the MIT License.
 using System.Collections;
 using UnityEngine;
-using TMPro;
 
 /// <summary>
 /// WindTurbineUIPanel uses the scriptable object to update relevant UI
@@ -27,19 +26,11 @@ public class WindTurbineUIPanel : MonoBehaviour
     [SerializeField]
     private WindTurbineGameEvent onResetCommandSent;
 
-    [Header("UI Components")]
-    public TextMeshProUGUI turbineNameLabel;
-
     public ProgressController progressControllerPower;
     public ProgressController progressControllerPowerBar;
     public ProgressController progressControllerTemperature;
     public ProgressController progressControllerWindSpeed;
     public ProgressController progressControllerRotorSpeed;
-    public TextMeshProUGUI dataValueTimeInterval;
-    public TextMeshProUGUI dataValueStatusCode;
-    public TextMeshProUGUI descriptionText;
-    //public GameObject descriptionPanel;
-    public GameObject warningIndicator;
 
     private IEnumerator currentAnimation;
 
@@ -82,25 +73,10 @@ public class WindTurbineUIPanel : MonoBehaviour
     }
 
     /// <summary>
-    /// Enable the Event Description panel and show the specified message
-    /// </summary>
-    /// <param name="eventDescription"></param>
-    public void ShowEventDescription(string eventDescription)
-    {
-        descriptionText.text = eventDescription;
-    }
-
-    /// <summary>
     /// Update relevant UI based on new data.
     /// </summary>
     private void OnWindTurbineDataUpdated()
     {
-        turbineNameLabel.text = windTurbineData.windTurbineData.TurbineId;
-        dataValueTimeInterval.text = windTurbineData.windTurbineData.TimeInterval;
-        dataValueStatusCode.text = windTurbineData.windTurbineData.EventCode.ToString();
-        warningIndicator.SetActive(windTurbineData.windTurbineMetaData.Alert);
-        descriptionText.text = windTurbineData.windTurbineData.EventDescription;
-
         if (animateValueTransitions)
         {
             if (currentAnimation != null)
