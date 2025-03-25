@@ -75,7 +75,7 @@ public class ADXService
 
                     // call ADX REST endpoint with query
                     string query = "opcua_metadata_lkv"
-                        + "| where Name contains 'assembly'"
+                     + "| where Name contains 'assembly'"
                         + "| where Name contains 'seattle'"
                         + "| join kind = inner(opcua_telemetry"
                         + "| where Name contains 'Energy'"
@@ -102,14 +102,20 @@ public class ADXService
                         // the 3rd entry is the data table
                         foreach (List<object> row in response[2].Rows)
                         {
+                            double value = double.Parse(row[1].ToString());
+                            if (value < 1000.0f)
+                            {
+                                continue;
+                            }
+
                             // entry 1 is the value
                             OnTelemetryMessage?.Invoke(new TelemetryMessage
                             {
                                 Ambient = 12.0,
                                 TurbineID = "T" + i.ToString(),
-                                Power = double.Parse(row[1].ToString()) * 1000,
-                                Rotor = double.Parse(row[1].ToString()) * 100,
-                                WindSpeed = double.Parse(row[1].ToString()) * 20
+                                Power = double.Parse(row[1].ToString()),
+                                Rotor = double.Parse(row[1].ToString()) * 0.1f,
+                                WindSpeed = double.Parse(row[1].ToString()) * 0.002f
                             });
 
                             i++;
