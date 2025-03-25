@@ -1,6 +1,6 @@
 # UA-CloudMetaverse
 
-OPC UA Industrial Metaverse reference implementation leveraging Unity and the Digital Twin Consortium's Manufacturing Ontologies Reference Solution.
+OPC UA Industrial Metaverse reference implementation leveraging Unity.
 
 <img src="Docs/metaverse.png" alt="screenshot" width="900" />
 
