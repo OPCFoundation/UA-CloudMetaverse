@@ -23,9 +23,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Supporting Scenes/ModuleStartScenes/Final_CompletedScene.unity
     guid: 34300c868fed7a443b2203d70a848b30
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CompletedScene.unity
     guid: 9b525369e7b672e44b91a2da80a9fa11
+  - enabled: 0
+    path: Assets/uacloudmetaverse.unity
+    guid: 0d498c664e5718a4da7b442762cb3e48
+  - enabled: 1
+    path: Assets/test.unity
+    guid: 9fa72f0c558d9f14a9f711e65a0fed72
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 227733279ffa97743bd8463cb8c61c84, type: 2}
     com.unity.addressableassets: {fileID: 11400000, guid: 8d341e90bdd67914e921da3cb85d3270, type: 2}

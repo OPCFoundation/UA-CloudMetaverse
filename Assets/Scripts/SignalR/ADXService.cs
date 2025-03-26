@@ -75,7 +75,7 @@ public class ADXService
 
                     // call ADX REST endpoint with query
                     string query = "opcua_metadata_lkv"
-                       + "| where Name contains 'assembly'"
+                        + "| where Name contains 'assembly'"
                         + "| where Name contains 'seattle'"
                         + "| join kind = inner(opcua_telemetry"
                         + "| where Name contains 'Energy'"
@@ -114,7 +114,7 @@ public class ADXService
                                 Ambient = 12.0,
                                 TurbineID = "T" + i.ToString(),
                                 Power = value,
-                                Rotor = value * 0.1f,
+                                Rotor = value * 0.003f,
                                 WindSpeed = value * 0.002f
                             });
 
